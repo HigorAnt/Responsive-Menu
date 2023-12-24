@@ -1,57 +1,62 @@
-* { /**/
+* { /*Reseta os valores padrões do navegador*/
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
 
 header { /**/
-    background-color: #24252a;
-    box-shadow: 0px 3px 10px #464646;
+    background-color: #24252a; /*Cor de fundo do menu*/
+    box-shadow: 0px 3px 10px #464646; /*Anexa uma sombra ao elemento*/ 
 }
 
 .nav-bar { /**/
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 1rem 4rem;
 }
 
-.logo {
+.logo { /**/
     display: flex;
     align-items: center;
 }
 
-.logo h1 {
+.logo h1 { /**/
     color: #fff;
 }
 
-.nav-list {
+.nav-list { /**/
     display: flex;
     align-items: center;
 }
 
-.nav-list ul {
+.nav-list ul { /**/
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-.nav-item {
+.nav-item { /**/
     margin: 0 15px;
 }
 
-.nav-link {
+.nav-item a:hover {
+    color: #01556a;
+    transition: 0.5s;
+}
+
+.nav-link { /**/
     text-decoration: none; /**/
     font-size: 1.15rem; /*Define o tamanho da fonte de cada item do menu*/
     color: #fff; /**/
     font-weight: 400; /**/
 }
 
-.actions-buttons {
+.actions-buttons { /**/
     display: flex;
     justify-content: center;
 }
 
-.login-button button {
+.login-button button { /**/
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -59,22 +64,28 @@ header { /**/
     margin: 1rem;
 }
 
-.login-button button a {
+.login-button button:hover {
+    background-color: #01556a;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login-button button a { /**/
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.mobile-menu-icon {
+.mobile-menu-icon { /**/
     display: none;
 }
 
-.mobile-menu {
+.mobile-menu { /**/
     display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 730px) { /**/
     .nav-bar {
         padding: 1.5rem 4rem;
     }
