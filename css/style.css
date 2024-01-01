@@ -24,6 +24,9 @@ header { /**/
     color: #fff;
 }
 
+h1 {
+    display: block;
+}
 .nav-list { /**/
     display: flex;
     align-items: center;
@@ -49,6 +52,7 @@ header { /**/
     font-size: 1.15rem; /*Define o tamanho da fonte de cada item do menu*/
     color: #fff; /**/
     font-weight: 400; /**/
+    margin: 1rem;
 }
 
 .actions-buttons { /**/
